@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "ES2021",
+    "sourceMap": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@admin/*": ["admin/*"],
+      "@shared/*": ["shared/*"],
+      "@streaming/*": ["streaming/*"]
+    }
+  },
+  "include": ["src", "spec", "index.ts", "pre-traffic.ts"],
+  "exclude": ["jest.config.ts", "node_modules"]
+}
